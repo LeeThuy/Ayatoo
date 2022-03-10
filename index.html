@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontas/css/all.min.css">
+    <script src="./main.js"></script>
+    <title > KAMISATA AYATO</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo1" src="img/logo.png" alt="logo">
+            <div class="header1">
+                <a class="trangchu" onclick="trangchu()" href="#">Trang chủ</a>
+                <a class="tintuc" onclick="tintuc()" href="#">Tin tức</a>
+                <a class="nhanvat" onclick="nhanvat()" href="#">Nhân vật</a>
+                <a id="tulieu" class="tulieu" onmouseover="danhsach1()" onmouseleave="danhsach2()" href="#">Tư liệu
+                    <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul id="danhsach" class="danhsach">
+                        <li>
+                            <a style="text-decoration: none;" href="https://genshin.hoyoverse.com/vi/game">Giới thiệu game</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;" href="https://genshin.hoyoverse.com/vi/map">Thế giới</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;" href="https://genshin.hoyoverse.com/vi/town">Tạp chí</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;" href="https://genshin.hoyoverse.com/vi/manga">Truyện tranh</a>
+                        </li>
+                    </ul>
+                <a href="#" class="khac" onclick="khac()">Khác</a>
+            </div>
+            <!-- ---------------------------------------------------------------------- -->
+            <div class="audio">
+                <a class="audio1" onclick="audio()" href="#">
+                    <i class="fa-solid fa-music">
+                        <audio id="on" class="on" autoplay type="audio/mp3">
+                            <source src="audio/y2mate.com -  追憶 1時間  BGM  OST  Reminiscence Genshin Impact Main Theme Var   原神 Genshin Impact　原神BGM.mp3">
+                        </audio>
+                    </i>
+                </a>
+            </div>
+            <!-- ----------------------------------------------------------------------- -->
+            <div class="dangnhap">
+                <a href="#">
+                    <span class="icon" onclick="" ><i style="font-size: 20px; color: black;" class="fa-solid fa-house-chimney"></i></span>
+                    <!-- <span class="text">Đăng nhập</span> -->
+                </a>
+            </div>
+            <div class="dangky">
+                <a href="#">
+                    <span class="icon"><i style="font-size: 20px; color:black" class="fa-solid fa-right-to-bracket"></i></span>
+                    <!-- <span class="text">Đăng ký</span> -->
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-------------------------------------------------------->
+    <main>
+        <div class="main">
+            <img style="width:100%; height: 100; top: 0;" id="backg" class="backg" src="img/ayato3.jpg" alt="backgroud">
+            <p style="width: 250px; height: 600px;" class="text">Với tư cách là người đứng đầu Ủy ban Yashiro, Kamisato Ayato cam kết duy trì sự thịnh vượng và ổn định của khu vực.<br>
+            
+                Nhìn thoáng qua, anh ta là người thấp bé và duyên dáng. Anh ấy không thích xuất hiện trước công chúng và không tìm cách thể hiện kỹ năng của mình một cách công khai.<br>
+
+                Nhưng những ai biết anh ta đều hiểu rằng anh ta không thể bị đánh giá thấp. Cách đây rất lâu, khi Ủy ban Yashiro rơi vào thời kỳ khó khăn, và khi Gia tộc Kamisato đang đứng trên bờ vực sụp đổ, thì chính người thanh niên này đã đứng dậy và ổn định tình hình.<br>
+                
+                Anh ta không thể đạt được vị trí của mình nếu không có sự tháo vát và tinh ranh phi thường. Nhưng có lẽ, nụ cười bất khả xâm phạm ấy mang đến những làn sóng đen tối hơn.
+            </p>
+            <!-- <p class="text2" style="background-color: black;" ><i class="fa-solid fa-horizontal-rule"></i></p> -->
+            <p style="width:250px; height: 400px;" class="text1">
+                Tuy nhiên, điều hấp dẫn nhất là trong hầu hết các cuộc đàm phán mà anh tham gia, anh đều không nhẫn tâm, không ganh đua, thậm chí sẵn sàng chia sẻ lợi ích để mọi người có được miếng bánh tương đối ưng ý.<br>
+                
+                "Chính xác thì anh ta định làm gì?" thường là những gì mọi người đang nghĩ sau khi tất cả những gì được nói và làm.<br>
+                
+                Tuy nhiên, bây giờ mọi người đều có một miếng bánh đó, có lẽ những gì trong tâm trí Kamisato Ayato không còn quá quan trọng.
+            </p>
+                <!-- --------------------------------------- -->
+            <p style="width:250px; height: 200px;" class="text2" >
+                The game of politics is fraught with peril. Saying too little is not good, but saying too much is also bad. But don't get me wrong, my Lord does not take any joy in these 'battles.' For him, it's just... a matter of duty.<br>
+                <span>
+                    <b>/THOMA</b>
+                </span>
+            </p>
+            <div class="anh1">
+                <p style="text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 100px;" class="tieude">KAMISATA AYATO</p>
+                <button>
+                    <a href="https://genshin.hoyoverse.com/vi/"><img style="width: 163px; height: 253px;" src="img/ayato6.jpg" alt="anh6"></a>
+                </button>
+                <button>
+                    <a href="https://genshin.hoyoverse.com/vi/"><img style="width: 193px; height: 253px;" src="img/ayato5.jpg" alt="anh5"></a>
+                </button>
+                <button>
+                    <a href="https://genshin.hoyoverse.com/vi/"><img style="width: 173px; height: 253px;" src="img/ayato4.jpg" alt="anh4"></a>
+                </button>
+                <button>
+                    <a href="https://genshin.hoyoverse.com/vi/"><img style="width: 183px; height: 253px;" src="img/ayato3.jpg" alt="anh3"></a>
+                </button>
+                <button>
+                    <a href="https://genshin.hoyoverse.com/vi/"><img style="width: 183px; height: 253px;" src="img/ayato2.png" alt="anh2"></a>
+                </button>
+            </div>
+        </div>
+        <div class="video">
+            <a class="iconvideo" href="#">
+                <i style="font-size: 50px; color: rgb(85, 85, 170);" class="fa-solid fa-circle-play"></i>
+                <iframe class="video1" style="margin-left: auto;margin-right: auto;" width="1120" height="630" src="https://www.youtube.com/embed/DOwHPk6tcn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div>
+        <!-- ---------------------------------------- -->
+    </main>
+     <!-------------------------------------------------------->
+    <footer>
+        <div class="footer">
+            <h1 style="text-align: center;" class="tieude">
+                <button>
+                    <a href="https://vi-vn.facebook.com/">
+                        <i style="font-size: 50px;" class="fa-brands fa-facebook"></i>
+                    </a>
+                </button>
+                <button>
+                    <a href="https://www.instagram.com">
+                        <i style="font-size: 50px;" class="fa-brands fa-instagram"></i>
+                    </a>
+                </button>
+                <button style="background-color: aquamarine;" >
+                    <a href="https://www.youtube.com/watch?v=DOwHPk6tcn8">
+                        <i style="font-size: 50px;" class="fa-brands fa-youtube"></i>
+                    </a> 
+                </button>   
+            </h1> 
+        </div>
+    </footer>
+
+    <script>
+        // function trangchu()
+        // {
+        // window.open("https://genshin.hoyoverse.com/vi/home","_blank");
+        // }
+        // function tintuc()
+        // {
+        // window.open("https://genshin.hoyoverse.com/vi/news","_blank");
+        // }
+        // function nhanvat()
+        // {
+        // window.open("https://genshin.hoyoverse.com/vi/character/mondstadt?char=0","_blank");
+        // }
+        // function tulieu()
+        // {
+        // window.open("https://genshin.hoyoverse.com/vi/news","_blank");
+        // }
+    </script>
+
+     <!-------------------------------------------------------->
+    <!-- <header class="header">
+        <style>
+            .header{
+                width: 100%;
+                height: 50px;
+                background-color:darkgrey;
+                position: relative;
+
+            }
+        </style>
+
+        <div class="logo"><img style="border-radius: 50%; width: 150px; height: 75px; position: absolute;" src="img/logo.png" alt="">
+        </div>
+        <div style="position: absolute; right: 30px; font-size: larger;" class="dangky">
+            <a href="https://genshin.hoyoverse.com/vi/home">Đăng ký</a>
+        </div>
+        <div style="position: absolute; right: 120px; font-size: larger;" class="dangnhap">
+            <a href="https://genshin.hoyoverse.com/vi/home">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Đăng nhập
+            </a>
+        </div>
+
+    </header> -->
+
+
+
+    <!-- <div class="backgroud"> -->
+        <!-- <img style="border-radius: 50%; width: 300px; height: 150px; position: absolute;" src="img/logo.png" alt=""> -->
+        <!-- <img style="width:100%; height: 100; top: 0;" id="backg" src="img/ayato3.jpg" alt="backgroud">
+        <a href="https://genshin.hoyoverse.com/vi/">
+            <h1 style="text-align:center" class="tieude">KAMISATA AYATO</h1>
+        </a>
+    </div>
+    <div class="background1">
+        <img style="width:100%; height: 100;" id="backg1" src="img/ayato2.png" alt="backgroud">
+        <h1 style="text-align:center" class="tieude">KAMISATA AYATO</h1>
+
+    </div>
+    <div class="background2">
+        <img style="width:100%; height: 100;" id="backg2" src="img/ayato1.jfif" alt="backgroud">
+        <h1 style="text-align: center;" class="tieude">
+            KAMISATA AYATO
+            <a href="https://vi-vn.facebook.com/">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=DOwHPk6tcn8">
+                <i class="fa-brands fa-youtube"></i>
+            </a>    
+        </h1> 
+    </div> -->
+    <!-- <style>
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://i.pinimg.com/originals/03/97/70/039770c29b331633d47b050f02809837.png),
+            url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoyGjDrZruBHinkR1cWZpH5DWXnOb63J3BwD96phAGr7wTNJ-61k8n1H0gc0vb9Q30ipc&usqp=CAU);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <div class="header"></div> -->
+</body>
+</html>

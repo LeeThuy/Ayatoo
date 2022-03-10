@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .log{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* min-height: 60vh; */
+            background-color: #ffff;
+                        
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        form{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 70px;
+        }
+        p{
+            font-size: 40px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .formgc{
+            margin-bottom: 20px;
+            position: relative;
+        }
+        input{
+            width: 400px;
+            height: 70px;
+            outline: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: inherit;
+            border: 1px solid rgb(44, 44, 202);
+            
+
+        }
+        label{
+            position: absolute;
+            left: 10px;
+            /* top: 25px;   */
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0px 5px;
+            pointer-events: none; /*rất quan trọng. khi nhấp chuột vào*/
+            transition: all 0.3 ease-in-out; /* cũng qun trọng . làm thời gian nhảy lên ko quá nhanh*/
+        }
+        .formgc input:focus{
+            border: 2px solid rgb(44, 44, 202);
+        }
+        .formgc input:focus + label, .formgc input:valid + label{
+            top: 0px;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(44, 44, 202);
+            background-color: #ffff;
+            opacity: 0.85;
+        }
+    </style>
+    <!-- ------------------------------------------- -->
+    <div class="log">
+        <form action="">
+            <p>Đăng Nhập</p>
+            <div class="formgc">
+                <input type="text" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="formgc">
+                <input type="password" name="password" required>
+                <label for="">Password</label>
+            </div>
+            <input style="background-color: rgb(38, 38, 207); color: #ffff;" type="submit" value="Đăng nhập" id="btnlogin" onclick="Login()">
+        </form>
+    </div>
+</body>
+</html>
